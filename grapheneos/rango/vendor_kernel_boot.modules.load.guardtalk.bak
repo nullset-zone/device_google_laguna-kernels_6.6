@@ -24,6 +24,7 @@ extra/private/google-modules/soc/gs/drivers/soc/google/smra/smra.ko
 extra/private/google-modules/soc/gs/drivers/soc/google/pixel_stat/pixel_stat_sysfs.ko
 extra/private/google-modules/soc/gs/drivers/soc/google/pixel_stat/mm/pixel_stat_mm.ko
 extra/private/google-modules/soc/gs/drivers/soc/google/kernel-top.ko
+extra/private/google-modules/soc/gs/drivers/soc/google/modemctl/google_modemctl.ko
 extra/private/google-modules/soc/gs/drivers/regulator/rt6160-regulator.ko
 extra/private/google-modules/soc/gs/drivers/regulator/s2dos07x02-regulator.ko
 extra/private/google-modules/soc/gs/drivers/iommu/samsung-secure-iova.ko
@@ -162,6 +163,7 @@ extra/private/google-modules/perf/infra/mbfs/mbfs.ko
 extra/private/google-modules/perf/infra/mbfs/mbfs_cpm_backend.ko
 extra/private/google-modules/power/mitigation/google_bcl.ko
 extra/private/google-modules/power/reset/pixel-reboot.ko
+extra/private/google-modules/radio/common/metrics_collection/metrics_collection.ko
 extra/private/google-modules/soc/gs/drivers/block/zram/zcomp_cpu.ko
 extra/private/google-modules/soc/gs/drivers/block/zram/zcomp_eh.ko
 extra/private/google-modules/soc/gs/drivers/block/zram/zram_gs.ko

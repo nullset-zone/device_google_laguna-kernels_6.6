@@ -102,6 +102,11 @@ extra/private/google-modules/bluetooth/broadcom/nitrous.ko
 extra/private/google-modules/fingerprint/goodix/gf3626/goodixfp.ko
 extra/private/google-modules/nfc/st21nfc.ko
 extra/private/google-modules/nfc/ese/st33spi.ko
+extra/private/google-modules/radio/samsung/s5400/cp_pmic.ko
+extra/private/google-modules/radio/samsung/s5400/cp_thermal_zone.ko
+extra/private/google-modules/radio/samsung/s5400/cpif.ko
+extra/private/google-modules/radio/samsung/s5400/cpif_page.ko
+extra/private/google-modules/radio/samsung/s5400/shm_ipc.ko
 extra/private/google-modules/touch/fts/fst2/fst2.ko
 extra/private/google-modules/touch/synaptics/syna_gtd/syna_touch.ko
 extra/private/google-modules/uwb/slsi/u100/u100.ko
