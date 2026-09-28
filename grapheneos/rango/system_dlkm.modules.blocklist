@@ -1,2 +1,28 @@
 # usbmon will be loaded on demand for debug purpose only
 blocklist usbmon.ko
+
+# GuardTalkOS — GKI Bluetooth/NFC transport excision (T-EXCISE-GKI-BT-MODULES, E-14).
+#
+# The eight GKI BT/NFC modules below are listed in this family's
+# system_dlkm.modules.load and were NOT blocklisted upstream, so the GKI transport
+# stack loaded at boot on all 13 program devices (system_dlkm modules.load) with
+# 0 matching modules.blocklist entries — independently of the vendor_dlkm
+# `nitrous` blocklist. That falsified the bt-excised.mk "harmless without nitrous"
+# rationale on its own terms.
+#
+# The whole connected component is blocked. modules.dep confirms every dependent
+# of these eight is itself in this set, so no out-of-scope module is orphaned.
+# rfkill.ko is intentionally NOT blocklisted — it is shared with the Wi-Fi path.
+#
+# Reversible (delete the lines) — Law 11. Wired through the existing
+# BOARD_SYSTEM_KERNEL_MODULES_BLOCKLIST_FILE :=
+#   $(KERNEL_MODULE_DIR)/system_dlkm.modules.blocklist
+# (vendor/adevtool/config/mk/google_devices/common/BoardConfig-common-gs201-plus.mk:27).
+blocklist bluetooth.ko
+blocklist hci_uart.ko
+blocklist btbcm.ko
+blocklist btqca.ko
+blocklist btsdio.ko
+blocklist rfcomm.ko
+blocklist hidp.ko
+blocklist nfc.ko
